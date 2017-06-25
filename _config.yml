@@ -37,5 +37,5 @@ exclude:
 gems:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-bootstrap-sass
   - jekyll-paginate
+  - github-pages
