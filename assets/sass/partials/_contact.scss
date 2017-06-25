@@ -1,0 +1,55 @@
+.contact {
+  background-color: $cake;
+  padding: $section-padding 0;
+  display: table;
+  width: 100%;
+
+  &-column {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+
+    &:last-child {
+      text-align: right;
+    }
+    @include breakpoint(sm) {
+      display: block;
+      width: 100%;
+      p, &:last-child {
+        text-align: center;
+      }
+    }
+
+    .social {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include breakpoint(sm) {
+        margin-top: 30px;
+      }
+
+      &-item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+
+        a {
+          font-size: 25px;
+          color: $black;
+          border-bottom: 0;
+          cursor: pointer;
+          transition: 0.4s all;
+
+          &:hover {
+            color: $blue;
+            transition: 0.4s all;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

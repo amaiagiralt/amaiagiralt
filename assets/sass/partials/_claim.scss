@@ -1,0 +1,51 @@
+.main {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include breakpoint(xs) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &-row {
+    @include make-row(12);
+    padding-top: $claim-padding - 112px;
+    padding-bottom: $claim-padding;
+    @include breakpoint(xs) {
+      padding-top: $claim-responsive-padding - 20px;
+      padding-bottom: $claim-responsive-padding;
+    }
+
+    &-column {
+      @include make-lg-column(5);
+    }
+
+    h1 {
+      width: 65%;
+      padding: 0 15px;
+      @include breakpoint(xs) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    h2 {
+      color: white;
+      padding: 0 15px;
+      width: 65%;
+      @include breakpoint(xs) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    .button {
+      margin: 20px 15px;
+      @include breakpoint(xs) {
+        margin: 20px 0;
+      }
+    }
+  }
+}

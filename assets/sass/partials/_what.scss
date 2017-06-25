@@ -1,0 +1,25 @@
+.what {
+  text-align: center;
+  @include breakpoint(sm) {
+    text-align: left;
+  }
+  h4 {
+    margin-bottom: 15px;
+  }
+}
+
+.what-header {
+  margin-bottom: 35px;
+  @include breakpoint(sm) {
+    text-align: left;
+  }
+}
+
+.what-picture {
+  max-width: 80px;
+  margin: 25px 0;
+}
+
+.what-button{
+  margin-top: 20px;
+}

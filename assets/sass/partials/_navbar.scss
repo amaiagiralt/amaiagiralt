@@ -1,0 +1,43 @@
+.navbar {
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: $font-family-heading;
+  @include breakpoint(xs) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    img {
+      width: 45px;
+    }
+    @include breakpoint(xs) {
+      padding: 0;
+
+      img {
+        width: 35px;
+      }
+    }
+  }
+
+  .navbar-items {
+      list-style: none;
+      display: table;
+      padding: 0;
+      margin: 0;
+  }
+
+  .navbar-item {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px;
+    a {
+      color: white;
+      border: 0;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+$red-outer: rgba(232,111,112,.4);
+
+@include keyframes('2-5', 2.5);
+
+.dot {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+
+  > span {
+    animation: pulse-2-5 1s linear infinite;
+    border-radius: 50%;
+    display: block;
+    height: 12px;
+    width: 12px;
+    > span {
+      animation: pulse-2-5 1s linear infinite;
+      border-radius: 50%;
+      display: block;
+      height: 12px;
+      width: 12px;
+      &:after {
+        animation: pulse-2-5 1s linear infinite;
+        border-radius: 50%;
+        content: '';
+        display: block;
+        height: 12px;
+        width: 12px;
+      }
+    }
+  }
+
+  &.red {
+    background-color: $red;
+    span {
+      background-color: $red-outer;
+      &:after {
+        background-color: $red-outer;
+      }
+    }
+  }
+}

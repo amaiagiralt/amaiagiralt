@@ -1,0 +1,110 @@
+body {
+  font-family: $font-family-body;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $black;
+  font-size: $body-size;
+  line-height: $body-size + 10px;
+  @include breakpoint(sm) {
+    font-size: $body-responsive-size;
+    line-height: $body-responsive-size + 10px;
+  }
+}
+
+::-moz-selection {
+  background-color: $blue;
+}
+
+::selection {
+  background-color: $blue;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-heading;
+  font-weight: 700;
+  color: $black;
+  margin: 0;
+}
+
+a.button,
+button {
+  font-family: $font-family-heading;
+  font-weight: 700;
+}
+
+a {
+  color: $blue;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 0.5px dotted $blue;
+
+  &:active,
+  &:focus,
+  &:hover,
+  &:visited {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: $heading-1-size;
+  @include breakpoint(sm) {
+    font-size: $heading-1-responsive-size;
+  }
+}
+
+h2 {
+  font-size: $heading-2-size;
+  line-height: $heading-2-size + 10px;
+  @include breakpoint(sm) {
+    font-size: $heading-2-responsive-size;
+    line-height: $heading-2-responsive-size + 10px;
+  }
+}
+
+h3 {
+  font-size: $heading-3-size;
+  line-height: $heading-3-size + 10px;
+  margin: 15px 0;
+  @include breakpoint(sm) {
+    font-size: $heading-3-responsive-size;
+    line-height: $heading-3-responsive-size + 10px;
+  }
+}
+
+h4 {
+  font-size: $heading-4-size;
+  line-height: $heading-4-size + 10px;
+  @include breakpoint(sm) {
+    font-size: $heading-4-responsive-size;
+    line-height: $heading-4-responsive-size + 10px;
+  }
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.red-strong {
+  @extend .strong;
+  color: $red;
+}
+
+.quote {
+  font-weight: 400;
+  font-style: italic;
+  font-size: $quote-size;
+  margin-left: -1.75px;
+  line-height: 1.48;
+  letter-spacing: -.014em;
+  text-indent: -.32em;
+  padding: 35px;
+  @include breakpoint(sm) {
+    font-size: $quote-responsive-size;
+    padding: 35px 0;
+  }
+}

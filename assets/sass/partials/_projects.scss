@@ -1,0 +1,49 @@
+.project {
+  padding: 15px;
+
+  &-picture {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.18);
+    img {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    padding: 15px;
+    background-color: white;
+    display: block;
+    text-decoration: none;
+    color: $black;
+    text-align: center;
+    border: 0;
+  }
+
+  &-header {
+    margin: 20px 0;
+  }
+
+  &-title {
+    margin-top: 10px;
+  }
+
+  &-description {
+    margin: 10px 0;
+    line-height: 1.5em;
+    color: $blue;
+    font-size: 16px;
+  }
+
+  &-image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &-date {
+    color: rgba(0,0,0,0.5);
+  }
+}

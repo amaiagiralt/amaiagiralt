@@ -1,0 +1,11 @@
+.services {
+  padding: $section-padding 0;
+}
+
+.services-header {
+  padding-bottom: 35px;
+  text-align: center;
+  @include breakpoint(sm) {
+    text-align: left;
+  }
+}

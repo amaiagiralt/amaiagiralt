@@ -1,0 +1,13 @@
+.footer {
+  text-align: center;
+  background-color: $black;
+  color: white;
+  padding: $section-padding/2 0;
+  @include make-row(12);
+  p {
+    font-size: $footer-size;
+    @include breakpoint(md) {
+      font-size: $footer-responsive-size;
+    }
+  }
+}

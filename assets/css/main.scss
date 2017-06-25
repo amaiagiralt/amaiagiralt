@@ -2,6 +2,27 @@
 ---
 @charset "utf-8";
 
+@import 'bootstrap';
 @import 'vendor/normalize';
 
 @import 'base/root';
+@import 'base/config';
+@import 'base/helpers';
+
+@import 'partials/colors';
+@import 'partials/buttons';
+@import 'partials/contact';
+@import 'partials/navbar';
+@import 'partials/footer';
+@import 'partials/claim';
+@import 'partials/instafeed';
+@import 'partials/typography';
+@import 'partials/grid';
+@import 'partials/dots';
+
+
+@import 'partials/about';
+@import 'partials/services';
+@import 'partials/projects';
+@import 'partials/working-on';
+@import 'partials/what';

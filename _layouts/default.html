@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: page.lang | default: 'en' }}">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-
-    <main class="main" aria-label="Content">
-      {{ content }}
-    </main>
-
-  </body>
+<body>
+  {% include shim.html %}
+  {{ content }}
+  {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
+  {% include footer.html %}
+</body>
 
 </html>

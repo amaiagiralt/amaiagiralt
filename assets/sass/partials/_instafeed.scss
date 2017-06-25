@@ -1,0 +1,9 @@
+#instafeed {
+  img {
+    width: 12.5%;
+    height: auto;
+  }
+  @include breakpoint(xs) {
+    display: none;
+  }
+}
