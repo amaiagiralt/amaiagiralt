@@ -1,3 +1,623 @@
-# robotstxt.org/
+#VAMOS A JUGAR A UN JUEGO:
+User-agent: GoogleBot
+Disallow: /robots.txt
 
-User-agent: *
+#APRECIADO GOOGLE, DADO QUE ESTA ES LA ÚNICA VEZ QUE TU VIENES A POR MÍ, EN VEZ DE YO A POR TI,
+#DÉJAME QUE TE CUENTE ALGO SOBRE MÍ
+#ESTUDIÉ MUY DURO CUANDO ERA UN CHAVAL, BUENO… REALMENTE NO MUCHO, YA SABES, ERA DE LOS MALOTES DE LA CLASE
+#SABES ESE CHAVAL DE LOS SIMPSONS QUE SALE EN LA INTRO, ESCRIBIENDO EN LA PIZARRA COMO CASTIGO?
+#
+#ESE ERA MI ROLLO
+#     ________________________________
+#    |.==============================,|
+#    ||  NO HABLARÉ EN CLASE         ||
+#    ||  NO HABLARÉ EN CLASE         ||
+#    ||  NO HABLARÉ EN CLASE         ||
+#    ||  N .——-—. É ,                ||
+#    ||   / ><   \  /                ||
+#    ||  |        |/\                ||
+#    ||   \______//\/                ||
+#    ||   _(____)/ /                 ||
+#    ||__/ ,_ _  _/__________________||
+#    '===\___\_) |===================='
+#         |______|
+#         |  ||  |
+#         |__||__|
+#         (__)(__)
+#
+#LA COSA ES QUE CUANDO ME TOCÓ DECIDIRME A QUÉ DEDICARME, LA VERDAD ES QUE YO ANDABA BASTANTE CONFUSO
+#LA VERDAD ES QUE SIEMPRE TUVE CLARO QUE A MÍ LO QUE ME GUSTABA DE LOS ORDENADORES ERA JUGAR A VIDEOJUEGOS
+#
+#ASÍ DE GUAPO ERA MI PC, COMO PUEDES VER, NADA QUE VER CON ESAS MOVIDAS RARAS DE MAC.
+#
+#                     .----.
+#         .---------. | == |
+#         |.-"""""-.| |----|
+#         ||       || | == |
+#         ||       || |----|
+#         |'-.....-'| |::::|
+#         `"")---(""` |___.|
+#        /:::::::::::\" _  "
+#       /:::=======:::\`\`\
+#       `"""""""""""""`  '-'
+#
+#HUBO UN MOMENTO EN MI VIDA EN QUE CON MI SEMANADA, NO ME DABA PARA VER TODAS LAS PELIS FRIKIS QUE DABAN EN EL CINE
+#ASÍ QUE EMPECÉ A APRENDER POR MI CUENTA, COMO CONSEGUIR DINERO A TRAVÉS DE INTERNET
+#A DÍA DE HOY LA VERDAD ES QUE CONTROLO BASTANTE, HUMILDEMENTE, NUNCA SABRÉ TANTO CÓMO TÚ
+#NUNCA FUÍ COMO EL RESTO DE CHAVALES DE MI BARRIO, QUE NO SABEN NI VER SERIES ONLINE SIN CAER EN LOS DOWNLOAD FALSOS
+#ASÍ SOY YO, LA MAYOR PARTE DEL TIEMPO
+#                 ___
+#                /` ,-\      _ ___
+#                |_c  '>    |-|   |._
+#         ___     )_ _/     | |   |  |
+#        [___]   /  `\____  | |   |_,'
+#        |  ^|  /  \_____/) |-|___|
+#        |   | /    /   _:::_))_(___
+#        |   |/`-._/_   |___________|
+#        `-;_|\_____ `\ ||"""""""""||
+#          | `######|_|_||         ||
+#          \ ._  _,'{~-_}|         ||
+#          _)   (   {-__}|         ||
+#         /______`\ |_,__)         ||
+#
+#
+#OK, SIEMPRE QUE ME TOCA TRABAJAR NO SOY FELIZ, PERO SIEMPRE QUE SOY FELIZ ME PONGO A TRABAJAR
+#
+#EN CUALQUIER CASO TENGO QUE AGRADECERTE TU MOTOR DE BÚSQUEDA, ESTA GUAPO, PARECE UNA MOVIDA FUTURISTA
+#
+#
+#    __...____________________          ,
+#   `(\ [ ===NCC-1700===--|__|) ___..--"_`--.._____
+#     `"""""""""""""""""| |""` [_""_-___________"_/
+#                       | |   /..../`'-._.-'`
+#                   ____| |__/::..'_
+#                  |\ ".`"` '_____//\
+#                  `"'-.   """""  \\/
+#                       `""""""""""`#
+#
+#
+#ME HA PROPORCIONADO UN TRABAJO QUE AMO. JODER ME ENCANTA EL SEO.
+#ES LO QUE MÁS ME GUSTA HACER, EXCEPTO LAS MOTOS. ME PUTO ENCANTAN LAS MOTOS Y LA VELOCIDAD
+#
+#                                    ,-~ |
+#       ________________          o==]___|
+#      |                |            \ \
+#      |________________|            /\ \
+# __  /  _,-----._      )           |  \ \.
+#|_||/_-~         `.   /()          |  /|]_|_____
+#  |//              \ |              \/ /_-~     ~-_
+#  //________________||              / //___________\
+# //__|______________| \____________/ //___/-\ \~-_
+#((_________________/_-o___________/_//___/  /\,\  \
+# |__/(  ((====)o===--~~                 (  ( (o/)  )
+#      \  ``==' /                         \  `--'  /
+#       `-.__,-'                           `-.__,-'
+#
+#
+#EN REALIDAD, DEDICARME AL SEO ME HA DADO LA OPORTUNIDAD DE GANAR DINERO
+#
+#
+#  ______________________________________________________________________
+# |.============[_F_E_D_E_R_A_L___R_E_S_E_R_V_E___N_O_T_E_]=============.|
+# ||%&%&%&%_    _        _ _ _   _ _  _ _ _     _       _    _  %&%&%&%&||
+# ||%&.-.&/||_||_ | ||\||||_| \ (_ ||\||_(_  /\|_ |\|V||_|)|/ |\ %&.-.&&||
+# ||&// |\ || ||_ \_/| ||||_|_/ ,_)|||||_,_) \/|  ||| ||_|\|\_|| &// |\%||
+# ||| | | |%               ,-----,-'____'-,-----,               %| | | |||
+# ||| | | |&% """"""""""  [    .-;"`___ `";-.    ]             &%| | | |||
+# ||&\===//                `).'' .'`_.- `. '.'.(`  A 76355942 J  \\===/&||
+# ||&%'-'%/1                // .' /`     \    \\                  \%'-'%||
+# ||%&%&%/`   d8888b       // /   \  _  _;,    \\      .-"""-.  1 `&%&%%||
+# ||&%&%&    8P |) Yb     ;; (     > a  a| \    ;;    //A`Y A\\    &%&%&||
+# ||&%&%|    8b |) d8     || (    ,\   \ |  )   ||    ||.-'-.||    |%&%&||
+# ||%&%&|     Y8888P      ||  '--'/`  -- /-'    ||    \\_/~\_//    |&%&%||
+# ||%&%&|                 ||     |\`-.__/       ||     '-...-'     |&%&%||
+# ||%%%%|                 ||    /` |._ .|-.     ||                 |%&%&||
+# ||%&%&|  A 76355942 J  /;\ _.'   \  } \  '-.  /;\                |%&%&||
+# ||&%.-;               (,  '.      \  } `\   \'  ,)   ,.,.,.,.,   ;-.%&||
+# ||%( | ) 1  """""""   _( \  ;...---------.;.; / )_ ```""""""" 1 ( | )%||
+# ||&%'-'==================\`------------------`/=================='-'%&||
+# ||%&JGS&%&%&%&%%&%&&&%&%%&)O N E  D O L L A R(%&%&%&%&%&%&%%&%&&&%&%%&||
+# '""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""`
+#
+#PERO TENGO UN PROBLEMILLA…
+#        .------------------------.
+#        |       PSIQUIATRA       |
+#        |         AYUDA  5€      |
+#        |________________________|
+#        ||     .-"""--.         ||
+#        ||    /        \.-.     ||
+#        ||   |     ._,     \    ||
+#        ||   \_/`-'   '-.,_/    ||
+#        ||   (_   (' _)') \     ||
+#        ||   /|           |\    ||
+#        ||  | \     __   / |    ||
+#        ||   \_).,_____,/}/     ||
+#      __||____;_--'___'/ (      ||
+#     |\ ||   (__,\\    \_/------||
+#     ||\||______________________||
+#     ||||                        |
+#     ||||                        |
+#     \|||                   _____|
+#      \||                  (______)
+#      `|___________________//||\\
+#                          //=||=\\
+#
+#
+#
+#CADA VEZ QUE HACES UN CAMBIO EN TU ALGORITMO, ME JODES LA VIDA
+#YA NO TENGO TIEMPO PARA JUGAR A VIDEOJUEGOS
+#
+#
+#      __________________________
+#     |OFFo oON                  |
+#     | .----------------------. |
+#     | |  .----------------.  | |
+#     | |  |                |  | |
+#     | |))|                |  | |
+#     | |  |                |  | |
+#     | |  |                |  | |
+#     | |  |                |  | |
+#     | |  |                |  | |
+#     | |  |                |  | |
+#     | |  '----------------'  | |
+#     | |__GAME BOY____________/ |
+#     |          ________        |
+#     |    .    (Nintendo)       |
+#     |  _| |_   """"""""   .-.  |
+#     |-[_   _]-       .-. (   ) |
+#     |   |_|         (   ) '-'  |
+#     |    '           '-'   A   |
+#     |                 B        |
+#     |          ___   ___       |
+#     |         (___) (___)  ,., |
+#     |        select start ;:;: |
+#     |                    ,;:;' /
+#     |                   ,:;:'.'
+#     '-----------------------`
+#
+#
+#
+#ANTES, EL SEO ERA UNA PROFESION DE ENFERMOS MENTALES, YA SABES, COMO LOS JUGADORES DE POKER
+#TIENES QUE TENER ARTE EN MARCARTE FAROLES Y EN ESO DE SUBIR LAS APUESTAS
+#
+#         _________   _________   _________   __________
+#        /         \ /         \ /         \ /          \
+#        |A        | |A        | |A        | |A         |
+#        |    ,    | |   _ _   | |    _    | |          |
+#        |   / \   | |  / ^ \  | |   (_)   | |    /\    |
+#        |  (_ _)  | |  \   /  | |  (_)_)  | |   <  >   |
+#        |   /_\   | |   \ /   | |   /_\   | |    \/    |
+#        |         | |    `    | |         | |          |
+#        |        A| |        A| |        A| |         A|
+#        \_________/ \_________/ \_________/ \__________/
+#
+#
+#PERO AHORA ESO YA NO ES SUFICIENTE
+#HACES TANTISIMOS PUTOS CAMBIOS
+#
+#QUE ME DUELE LA CABEZA INTENTANDO SEGUIRTE EL RITMO
+#
+#¿QUE COJONES TE PASA? ¿POR QUÉ TANTISIMO PUTO CAMBIO?
+#EL SEO SE HA VUELTO UN POCO UNA RULETA RUSA
+#
+#                    .-.
+#             __    _| '-----------._____________.-'\
+#            `-.`\,'  .======.      \ =====  ======= \==.
+#           __.'     ||  (___|- = = |----------------|  |
+#          /     ,_  ||   ___| - - -|________________/  |
+#         /     / /  ||  (___| = = =|________________)=='
+#         |    (_/    '======'_-- -/
+#        /                 (_II== /
+#       |              .---.  ___/
+#      /  ::.    .--. /\ /  |(
+#      | .::::. /    \\ \(  //
+#    / .:::::: |     '-----'
+#    ; :::::::: |
+#    | :::::::: |
+#    |::::::::: |
+#    /::::::::: |
+#   '-----------'
+#
+#DEBERÍA DEDICARME A OTRA COSA? ES MOMENTO DE VOLVER AL SEM?
+#O HAY ALGUNA FORMA DE COMPRENDER TANTO PUTO UPDATE?
+#
+#
+#PLEASE HALP.
+#SIEMPRE TUYO,
+#MARCOS
+#
+
+# Bots perjuduciales
+
+User-agent: BotRightHere
+Disallow: /
+
+User-agent: WebZip
+Disallow: /
+
+User-agent: larbin
+Disallow: /
+
+User-agent: b2w/0.1
+Disallow: /
+
+User-agent: Copernic
+Disallow: /
+
+User-agent: psbot
+Disallow: /
+
+User-agent: Python-urllib
+Disallow: /
+
+User-agent: URL_Spider_Pro
+Disallow: /
+
+User-agent: CherryPicker
+Disallow: /
+
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: WebBandit
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+User-agent: ExtractorPro
+Disallow: /
+
+User-agent: CopyRightCheck
+Disallow: /
+
+User-agent: Crescent
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: ProWebWalker
+Disallow: /
+
+User-agent: CheeseBot
+Disallow: /
+
+User-agent: LNSpiderguy
+Disallow: /
+
+User-agent: Alexibot
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: MIIxpc
+Disallow: /
+
+User-agent: Telesoft
+Disallow: /
+
+User-agent: Website Quester
+Disallow: /
+
+User-agent: WebZip
+Disallow: /
+
+User-agent: moget/2.1
+Disallow: /
+
+User-agent: WebZip/4.0
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebSauger
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: NetAnts
+Disallow: /
+
+User-agent: Mister PiX
+Disallow: /
+
+User-agent: WebAuto
+Disallow: /
+
+User-agent: TheNomad
+Disallow: /
+
+User-agent: WWW-Collector-E
+Disallow: /
+
+User-agent: RMA
+Disallow: /
+
+User-agent: libWeb/clsHTTP
+Disallow: /
+
+User-agent: asterias
+Disallow: /
+
+User-agent: httplib
+Disallow: /
+
+User-agent: turingos
+Disallow: /
+
+User-agent: spanner
+Disallow: /
+
+User-agent: InfoNaviRobot
+Disallow: /
+
+User-agent: Harvest/1.5
+Disallow: /
+
+User-agent: Bullseye/1.0
+Disallow: /
+
+User-agent: Mozilla/4.0 (compatible; BullsEye; Windows 95)
+Disallow: /
+
+User-agent: Crescent Internet ToolPak HTTP OLE Control v.1.0
+Disallow: /
+
+User-agent: CherryPickerSE/1.0
+Disallow: /
+
+User-agent: CherryPickerElite/1.0
+Disallow: /
+
+User-agent: WebBandit/3.50
+Disallow: /
+
+User-agent: NICErsPRO
+Disallow: /
+
+User-agent: Microsoft URL Control - 5.01.4511
+Disallow: /
+
+User-agent: DittoSpyder
+Disallow: /
+
+User-agent: Foobot
+Disallow: /
+
+User-agent: SpankBot
+Disallow: /
+
+User-agent: BotALot
+Disallow: /
+
+User-agent: lwp-trivial/1.34
+Disallow: /
+
+User-agent: lwp-trivial
+Disallow: /
+
+User-agent: BunnySlippers
+Disallow: /
+
+User-agent: Microsoft URL Control - 6.00.8169
+Disallow: /
+
+User-agent: URLy Warning
+Disallow: /
+
+User-agent: Wget/1.6
+Disallow: /
+
+User-agent: Wget/1.5.3
+Disallow: /
+
+User-agent: Wget
+Disallow: /
+
+User-agent: LinkWalker
+Disallow: /
+
+User-agent: cosmos
+Disallow: /
+
+User-agent: moget
+Disallow: /
+
+User-agent: hloader
+Disallow: /
+
+User-agent: humanlinks
+Disallow: /
+
+User-agent: LinkextractorPro
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: Mata Hari
+Disallow: /
+
+User-agent: LexiBot
+Disallow: /
+
+User-agent: Web Image Collector
+Disallow: /
+
+User-agent: The Intraformant
+Disallow: /
+
+User-agent: True_Robot/1.0
+Disallow: /
+
+User-agent: True_Robot
+Disallow: /
+
+User-agent: BlowFish/1.0
+Disallow: /
+
+User-agent: JennyBot
+Disallow: /
+
+User-agent: MIIxpc/4.2
+Disallow: /
+
+User-agent: BuiltBotTough
+Disallow: /
+
+User-agent: ProPowerBot/2.14
+Disallow: /
+
+User-agent: BackDoorBot/1.0
+Disallow: /
+
+User-agent: toCrawl/UrlDispatcher
+Disallow: /
+
+User-agent: WebEnhancer
+Disallow: /
+
+User-agent: suzuran
+Disallow: /
+
+User-agent: TightTwatBot
+Disallow: /
+
+User-agent: VCI WebViewer VCI WebViewer Win32
+Disallow: /
+
+User-agent: VCI
+Disallow: /
+
+User-agent: Szukacz/1.4
+Disallow: /
+
+User-agent: QueryN Metasearch
+Disallow: /
+
+User-agent: Openfind data gatherer
+Disallow: /
+
+User-agent: Openfind
+Disallow: /
+
+User-agent: Xenu's Link Sleuth 1.1c
+Disallow: /
+
+User-agent: Xenu's
+Disallow: /
+
+User-agent: Zeus
+Disallow: /
+
+User-agent: RepoMonkey Bait & Tackle/v1.01
+Disallow: /
+
+User-agent: RepoMonkey
+Disallow: /
+
+User-agent: Microsoft URL Control
+Disallow: /
+
+User-agent: Openbot
+Disallow: /
+
+User-agent: URL Control
+Disallow: /
+
+User-agent: Zeus Link Scout
+Disallow: /
+
+User-agent: Zeus 32297 Webster Pro V2.9 Win32
+Disallow: /
+
+User-agent: Webster Pro
+Disallow: /
+
+User-agent: EroCrawler
+Disallow: /
+
+User-agent: LinkScan/8.1a Unix
+Disallow: /
+
+User-agent: Keyword Density/0.9
+Disallow: /
+
+User-agent: Kenjin Spider
+Disallow: /
+
+User-agent: Iron33/1.0.2
+Disallow: /
+
+User-agent: Bookmark search tool
+Disallow: /
+
+User-agent: GetRight/4.2
+Disallow: /
+
+User-agent: FairAd Client
+Disallow: /
+
+User-agent: Gaisbot
+Disallow: /
+
+User-agent: Aqua_Products
+Disallow: /
+
+User-agent: Radiation Retriever 1.1
+Disallow: /
+
+User-agent: Flaming AttackBot
+Disallow: /
+
+User-agent: Oracle Ultra Search
+Disallow: /
+
+User-agent: MSIECrawler
+Disallow: /
+
+User-agent: PerMan
+Disallow: /
+
+User-agent: searchpreview
+Disallow: /
+
+User-agent: TurnitinBot
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: ExtractorPro
+Disallow: /
+
+User-agent: WebZIP/4.21
+Disallow: /
+
+User-agent: WebZIP/5.0
+Disallow: /
+
+User-agent: HTTrack 3.0
+Disallow: /
+
+User-agent: TurnitinBot/1.5
+Disallow: /
+
+User-agent: WebCopier v3.2a
+Disallow: /
+
+User-agent: WebCapture 2.0
+Disallow: /
+
+User-agent: WebCopier v.2.2
+Disallow: /
