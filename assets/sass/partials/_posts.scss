@@ -1,0 +1,56 @@
+.post {
+  padding: 15px;
+}
+
+.post-picture {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.post-more {
+  i {
+    margin-left: 5px;
+  }
+}
+
+.last-post {
+  margin-bottom: 35px;
+  display: block;
+  padding: 60px 20px;
+  border: 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  h3, p {
+    color: white;
+  }
+}
+
+.post-header {
+  margin-bottom: 15px;
+}
+
+.main-row {
+  .post-title {
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+}
+
+.post-content {
+  margin: 35px 0;
+}
+
+.post-date {
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+}

@@ -3,11 +3,15 @@ layout: default
 ---
 
 <article class="post-detail">
-  <section class="main" style="background-image: linear-gradient(81deg, rgba(117, 255, 192, 0.9) 15%, rgba(125, 224, 230, 0.7) 100%), url('/assets/images/background.jpg');">
+  <section class="main" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1471644518115-1f02e9819854?dpr=2&auto=compress,format&fit=crop&w=767&h=511&q=80&cs=tinysrgb&crop=');">
+    {% include navbar.html %}
     <div class="main-row">
       <div class="container">
         <div class="main-column ">
-          <h1>{{ post.title }}</h1>
+            <h1 class="post-title">{{ page.title }}</h1>
+            <p class="post-date">
+              {{ page.date | date: '%B %d, %Y' }}
+            </p>
         </div>
       </div>
     </div>
@@ -26,8 +30,13 @@ layout: default
         {% endfor %}
       </ul>
     </div>
+    <div class="post-content">
 
-    {{ content }}
+      {{ content }}
+      <div class="post-disqus">
+        {% include disqus.html %}
+      </div>
+    </div>
   </div>
 
 </article>

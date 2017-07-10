@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  min-height: 400px;
+  @include breakpoint(sm) {
+    min-height: auto;
+  }
   @include breakpoint(xs) {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -11,11 +15,11 @@
 
   &-row {
     @include make-row(12);
-    padding-top: $claim-padding - 112px;
+    padding-top: $claim-padding/2;
     padding-bottom: $claim-padding;
-    @include breakpoint(xs) {
-      padding-top: $claim-responsive-padding - 20px;
-      padding-bottom: $claim-responsive-padding;
+    @include breakpoint(sm) {
+      padding-top: $claim-responsive-padding;
+      padding-bottom: $claim-responsive-padding*2;
     }
 
     &-column {

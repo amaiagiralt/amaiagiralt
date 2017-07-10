@@ -52,8 +52,10 @@ a {
 
 h1 {
   font-size: $heading-1-size;
+  line-height: $heading-1-size + 10px;
   @include breakpoint(sm) {
     font-size: $heading-1-responsive-size;
+    line-height: $heading-1-responsive-size + 10px;
   }
 }
 
