@@ -1,0 +1,35 @@
+.error {
+  position: relative;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+
+  &-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  &-description,
+  &-title {
+    color: white;
+  }
+
+  &-title {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+
+  &-description {
+    font-size: 20px;
+  }
+
+  &-back {
+    text-transform: normal;
+  }
+}
