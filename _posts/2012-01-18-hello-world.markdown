@@ -1,9 +1,10 @@
 ---
-layout: post
 title: Hello World!
+layout: post
 tags: Meta
-permalink: /hello-world/
-excerpt: Vestibulum imperdiet adipiscing arcu, quis aliquam dolor condimentum dapibus. Aliquam fermentum leo aliquet quam volutpat et molestie mauris mattis.
+permalink: "/hello-world"
+excerpt: Vestibulum imperdiet adipiscing arcu, quis aliquam dolor condimentum dapibus.
+  Aliquam fermentum leo aliquet quam volutpat et molestie mauris mattis.
 ---
 
 Hello World!
