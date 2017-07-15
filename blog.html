@@ -35,8 +35,7 @@ permalink: /blog
       <h2>Other posts</h2>
     </header>
     <div class="row">
-
-      {% for post in site.posts offset:1 limit:2 %}
+      {% for post in site.posts offset:1 %}
       <article class="post col-md-4 col-sm-6 ">
         <div class="post-wrapper">
           <div class="post-picture" style="background-image: url('https://images.unsplash.com/photo-1471644518115-1f02e9819854?dpr=2&auto=compress,format&fit=crop&w=767&h=511&q=80&cs=tinysrgb&crop=')"></div>
@@ -46,10 +45,14 @@ permalink: /blog
           </p>
           <a class="post-more" href="{{ post.url }}">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
         </div>
-
       </article>
       {% endfor %}
     </div>
-
+  </div>
+  <hr/>
+  <div class="container">
+    <div class="row">
+      {% include newsletter.html %}
+    </div>
   </div>
 </section>

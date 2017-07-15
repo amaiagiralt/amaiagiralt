@@ -1,0 +1,90 @@
+.newsletter {
+  text-align: center;
+  margin: 60px auto 35px auto;
+}
+
+.newsletter-container {
+  padding: 0 15px;
+}
+
+.newsletter-wrapper {
+  margin: 0 auto;
+}
+
+.newsletter-header {
+  margin-bottom: 35px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.newsletter-title {
+  margin: 0;
+}
+
+.newsletter-fields {
+  display: table;
+  width: 100%;
+  @include breakpoint(sm) {
+    display: block;
+  }
+
+}
+
+.newsletter-field {
+  margin: 15px 0;
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 0 2px;
+  @include breakpoint(sm) {
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+
+    .button {
+      width: 100%;
+      max-width: 100%;
+      font-weight: bold;
+      font-family: $font-family-heading;
+      height: 47px;
+    }
+}
+
+.newsletter-label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.newsletter-input {
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid #DDDDDD;
+  border-radius: 4px;
+  display: inline-block;
+  outline: 0;
+  height: 47px;
+  text-indent: 15px;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+
+  &:focus {
+    border: 2px solid $aqua;
+  }
+}
+
+.newsletter-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.newsletter-disclaimer {
+  font-style: italic;
+}
