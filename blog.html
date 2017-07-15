@@ -23,7 +23,7 @@ permalink: /blog
     <header class="post-header">
       <h2>Last post</h2>
     </header>
-    <a href="{{ post.url }}" class="last-post" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1471644518115-1f02e9819854?dpr=2&auto=compress,format&fit=crop&w=767&h=511&q=80&cs=tinysrgb&crop=')">
+    <a href="{{ post.url }}" class="last-post" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ post.picture }}')">
       <h3>{{ post.title }}</h3>
       <p>
         {{ post.excerpt }}
@@ -38,7 +38,7 @@ permalink: /blog
       {% for post in site.posts offset:1 %}
       <article class="post col-md-4 col-sm-6 ">
         <div class="post-wrapper">
-          <div class="post-picture" style="background-image: url('https://images.unsplash.com/photo-1471644518115-1f02e9819854?dpr=2&auto=compress,format&fit=crop&w=767&h=511&q=80&cs=tinysrgb&crop=')"></div>
+          <div class="post-picture" style="background-image: url('{{ post.picture }}')"></div>
           <h3>{{ post.title }}</h3>
           <p>
             {{ post.excerpt }}
