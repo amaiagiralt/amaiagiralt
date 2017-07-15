@@ -30,7 +30,7 @@ permalink: /blog
       </p>
     </a>
     {% endfor %}
-
+    {% if site.posts.size > 1 %}
     <header class="post-header">
       <h2>Other posts</h2>
     </header>
@@ -48,8 +48,8 @@ permalink: /blog
       </article>
       {% endfor %}
     </div>
+    {% endif %}
   </div>
-  <hr/>
   <div class="container">
     <div class="row">
       {% include newsletter.html %}

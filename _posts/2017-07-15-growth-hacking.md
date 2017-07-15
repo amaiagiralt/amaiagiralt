@@ -4,10 +4,10 @@ layout: post
 permalink: growth-hacking
 excerpt: 'Let’s start from the very beginning… why does this mix of words has become
   that popular? What is Growth hacking? '
-picture: "/assets/images/posts/growth-hacking/final.jpg"
+picture: "/assets/images/posts/growth-hacking/main.jpg"
 ---
 
-Let’s start from the very beginning… why does this mix of words has become that popular? What is Growth hacking? 
+Let’s start from the very beginning… why does this mix of words has become that popular? What is Growth hacking?
 
 We are super digital! I mean look around you, stop and analyze how your friends, colleagues even how your granny behave: We buy things on the internet, we look for recommendations in forums, we check youtube to compare products... Our habits are different and most of our channels are online so marketing must adapt and reinvent to this new behaviors and technologies.
 
@@ -33,7 +33,7 @@ Growth hackers make their decisions based on metrics. As they are constantly pro
 
 **Creative:**
 
-Growth hackers are driven by data and moving metrics. However, they are also creative problem solvers. These folks have to think and create their own path to scale and in many cases, they don't have resources at all, sometimes few changes in the interface can make a huge impact on the revenues from an e-commerce for example. 
+Growth hackers are driven by data and moving metrics. However, they are also creative problem solvers. These folks have to think and create their own path to scale and in many cases, they don't have resources at all, sometimes few changes in the interface can make a huge impact on the revenues from an e-commerce for example.
 
 **Curious:**
 

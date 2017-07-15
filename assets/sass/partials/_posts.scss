@@ -44,7 +44,15 @@
 }
 
 .post-content {
-  margin: 35px 0;
+  margin: 35px auto;
+  max-width: 750px;
+  h1, h2, h3, h4 {
+    margin: 15px 0;
+  }
+  img {
+    width: 100%;
+    margin: 15px 0;
+  }
 }
 
 .post-date {
@@ -53,4 +61,8 @@
   color: white;
   font-style: italic;
   font-size: 18px;
+}
+
+.post-disqus {
+  margin-top: 35px;
 }
