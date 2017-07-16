@@ -59,4 +59,4 @@ Stop paralysis! It's all about launching and testing new experiments to learn as
 
 Last but not least, is really important to have well-defined objectives and indicators of what success means.
 
-That´s all folks ,thanks for reading! [Tweet me](http://twitter.com/amaigi) with you opinion ;)
+That's all folks, thanks for reading! [Tweet me](http://twitter.com/amaigi) with you opinion ;)
