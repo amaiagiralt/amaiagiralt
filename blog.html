@@ -1,10 +1,53 @@
----
-layout: default
-title: Blog • Amaia Giralt
-permalink: /blog
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<section class="main" style="background-image: linear-gradient(81deg, rgba(117, 255, 192, 0.9) 15%, rgba(125, 224, 230, 0.7) 100%), url('/assets/images/blog.jpg');">
+  <title>Amaia Giralt website</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="./assets/js/jquery.js"> </script>
+  <script src="./assets/js/bootstrap.js"> </script>
+  <script src="./assets/js/main.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--Navegation-->
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="./assets/images/logo.png"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./projects.html">Projects<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+<section class="main" style="background-image: linear-gradient(81deg, rgba(125, 224, 230, 0.9) 15%, rgba(125, 224, 230, 0.7) 100%), url('/assets/images/blog.jpg');">
   {% include navbar.html %}
   <div class="main-row">
     <div class="container">
@@ -19,40 +62,60 @@ permalink: /blog
 
 <section class="section blog">
   <div class="container">
-    {% for post in site.posts limit:1 %}
     <header class="post-header">
       <h2>Last post</h2>
     </header>
-    <a href="{{ post.url }}" class="last-post" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ post.picture }}')">
-      <h3>{{ post.title }}</h3>
-      <p>
-        {{ post.excerpt }}
-      </p>
+    <a href="" class="last-post">
+      <h3 class="last-post__title"></h3>
+      <p class="last-post__content"></p>
     </a>
-    {% endfor %}
-    {% if site.posts.size > 1 %}
     <header class="post-header">
       <h2>Other posts</h2>
     </header>
-    <div class="row">
-      {% for post in site.posts offset:1 %}
-      <article class="post col-md-4 col-sm-6 ">
-        <div class="post-wrapper">
-          <div class="post-picture" style="background-image: url('{{ post.picture }}')"></div>
-          <h3>{{ post.title }}</h3>
-          <p>
-            {{ post.excerpt }}
-          </p>
-          <a class="post-more" href="{{ post.url }}">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-        </div>
-      </article>
-      {% endfor %}
+    <div class="row other-posts">
     </div>
-    {% endif %}
   </div>
   <div class="container">
     <div class="row">
-      {% include newsletter.html %}
+  <!-- {% include newsletter.html %} -->
     </div>
   </div>
 </section>
+<script type="text/javascript">
+     $(function () {
+            var $content = $('#jsonContent');
+            var data = {
+            rss_url: 'https://medium.com/feed/@amaiagiralt'
+            };
+            $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
+                if (response.status == 'ok') {
+                    var output = '';
+                    $content = $(".other-posts");
+                    $.each(response.items, function (k, item) {
+                      var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
+                      var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; // Find where the src attribute starts
+                      var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
+                      var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
+                      var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
+
+                      var yourString = item.description.replace(/<img[^>]*>/g,"");
+                      var maxLength = 120 // maximum number of characters to extract
+                      //trim the string to the maximum length
+                      var trimmedString = yourString.substr(0, maxLength);
+                      //re-trim if we are in the middle of a word
+                      trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+                      if(k == 0){
+                        $(".last-post").attr("href", item.link);
+                        $(".last-post").attr("style", "background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("+src+")");
+                        $(".last-post__title").html(item.title);
+                        $(".last-post__content").html(trimmedString);
+                      } else {
+                        output+="<article class='post col-md-4 col-sm-6'><div class='post-wrapper'><a href="+item.link+" title='Go to "+item.title+"'><div class='post-picture' style='background-image: url("+src+")'></div></a><h3>"+item.title+"</h3><p>"+trimmedString+"</p><a class='post-more' href="+item.link+" title='Go to "+item.title+"'>Read More <i class='fa fa-arrow-right' aria-hidden='true'></i></a></div></article>";
+                      }
+                    });
+                    $content.html(output);
+                }
+            });
+        });
+    </script>
+</body>

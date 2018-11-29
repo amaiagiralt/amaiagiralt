@@ -1,10 +1,52 @@
----
-layout: default
-permalink: "/about"
----
 
-<section class="main" style="background-image: linear-gradient(81deg, rgba(117, 255, 192, 0.9) 15%, rgba(125, 224, 230, 0.7) 100%), url('/assets/images/about.jpg');">
-  {% include navbar.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Amaia Giralt website</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="./assets/js/jquery.js"> </script>
+  <script src="./assets/js/bootstrap.js"> </script>
+  <script src="./assets/js/main.js"> </script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--Navegation-->
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="./assets/images/logo.png"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./about.html">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+<section class="main" style="background-image: linear-gradient(81deg, rgba(125, 224, 230, 0.9) 15%, rgba(125, 224, 230, 0.3) 100%), url('./assets/images/about.jpg');">
   <div class="main-row">
     <div class="container">
       <div class="main-column ">
@@ -20,12 +62,13 @@ permalink: "/about"
     <div class="about-row">
       <div class="about-column">
         <p>
-          Big fan of irony and absurd humor. I am an explorer in my own city and when I can in other ones. I always get lost, but I don’t really care. For that reason instead of buying a map I decided to bring my camera.
+          Big fan of irony and absurd humor. I am an explorer in my own city and when I can in other ones. I always get lost, but I don’t really care. For that reason instead of buying a map I decided to bring my camera. I also enjoy immitating accents, just for you to know.
         </p>
       </div>
       <div class="about-column">
         <p>
-          I play ukelele, sing and dance the moonwalk as Michael Jackson used to. I also enjoy imitating accents. Apart from that I am passionate about <a target="_blank" href="http://www.spri.eus/es/up-euskadi?n=10968">entrepreneurship and innovation</a>.
+           Apart from that I am passionate about <a target="_blank" href="http://www.spri.eus/es/up-euskadi?n=10968">entrepreneurship and innovation</a>. And recently, I am interested in
+           <a target="_blank" href="http://www.spri.eus/es/up-euskadi?n=10968"> UX-UI Design and Product Management</a>.
           <i class="em em-v"></i>
           <i class="em em-v"></i>
           <i class="em em-v"></i>
@@ -33,11 +76,14 @@ permalink: "/about"
       </div>
     </div>
 
-    <section class="grid">
-      <div class="grid-item grid-item__big">
+     <section class="grid">
+    <!-- La foto grande que hay encima de las dos pequeñas-  <div class="grid-item grid-item__big">
+
         <div class="grid-item-content">
         </div>
       </div>
+    -->
+
       <div class="grid-item grid-item__small">
         <div class="grid-item-content">
         </div>
@@ -60,26 +106,30 @@ permalink: "/about"
         </h3>
         </header>
         <ul>
-          <li>Building a <a target="_blank" href="/projects/steps-junior-coop">company</a> with my cool 14 team mates 2011-2015 (17-21years old).</li>
+          <li>Building a <a target="_blank" href="./projects/steps-junior-coop">company</a> with my cool 14 team mates 2011-2015 (17-21years old).</li>
           <li>Living and traveling though Finland, Holland, San Francisco, China and India developing projects. </li>
-          <li>Creating guerrilla marketing actions and <a target="_blank" href="/projects/koxk">gastronomic experiences</a> in Gastrokulturala.</li>
-          <li>Trying to change the way we learn by organizing different workshops, events and <a target="_blank" href="/projects/noanean-experience">learning journeys</a>.</li>
-          <li>Re-inventing the way we travel with <a href="http://www.mapsforexplorers.com/">Maps For Explorers</a>.</li>
+          <li>Creating guerrilla marketing actions and <a target="_blank" href="./projects/koxk">gastronomic experiences</a> in Gastrokulturala.</li>
+          <li>Trying to change the way we learn by organizing different workshops, events and <a target="_blank" href="./projects/noanean-experience">learning journeys</a>.</li>
+          <li>
+          Getting one of the scholarships that Wallapop and Ironhack gave to women to study <a href="https://medium.com/@IronhackBCN/https-medium-com-ironhackbcn-so-you-want-to-stand-out-as-a-product-manager-9e2162b86ff3"> UX-UI </a> (13.000 Participants)</li>
+          <li> Undertook postgraduate studies in Growth Hacking  with an A+ grade </li>
+          <li> Trying to help people getting habits in <a href="http://www.21messages.today/">21 Messages Today</a>.</li>
           <li>Volunteering with the Missionaries of Charity (Calcutta)</li>
         </ul>
       </div>
       <div class="about-column">
         <header>
           <h3>
-          <i class="fa fa-heart-o" aria-hidden="true"></i>
-          Lover of…
+          <i class="fa fa-flag-o" aria-hidden="true"></i>
+        Inspired by… (always updating)
         </h3>
         </header>
         <ul>
-          <li>Brands and business models that challenge the status quo.</li>
-          <li>Products and services human-centered design.</li>
-          <li>Unorthodox ideas.</li>
-          <li>Coherence in the message and team alignment.</li>
+          <li> <b>The medici effect -Frans Johansson </b>: breakthrough insights at the intersection of ideas, concepts, and cultures (Frans Johansson)</li>
+          <li><a target="_blank" href="http://es.slideshare.net/giribiri/starting-with-why-simon-sinek">Start With -Simon Sinek</a>: A framework upon which organizations can be built, movements can be led, and people can be inspired.</li>
+          <li> <b>Steal Like An Artist -Austin Kleon </b>:A manifesto for creativity in the digital age.
+ </li>
+          <li> <b>Business Model Generation -Alexander Osterwalder & Yves Pigneur </b>: A structure way to work in your business model and create value.
         </ul>
       </div>
     </div>
@@ -92,21 +142,26 @@ permalink: "/about"
         </h3>
         </header>
         <ul>
-          <li>Improving all the interactions points a product and a service has with the user.</li>
-          <li>Giving value to customers not just features.</li>
-          <li>Humanizing technology.</li>
+          <li> <b>Improving all the interactions points </b> a product and a service has with the user.</li>
+          <li>Giving <b>value </b> to customers not just features.</li>
+          <li> <b>Humanizing </b> technology.</li>
+          <li> Creating <b>digital products </b> </li>
         </ul>
       </div>
       <div class="about-column">
         <header>
           <h3>
-          <i class="fa fa-flag-o" aria-hidden="true"></i>
-          Inspired by… (always updating)
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
+          Lover of...
         </h3>
         </header>
         <ul>
-          <li>The medici effect: breakthrough insights at the intersection of ideas, concepts, and cultures (Frans Johansson)</li>
-          <li><a target="_blank" href="http://es.slideshare.net/giribiri/starting-with-why-simon-sinek">Start With</a>: Inspire everyone to take action Why (Simon Sinek)</li>
+          <li>Brands and business models that <b>challenge the status quo </b>.</li>
+          <li>Products and services <b>human-centered design </b>.</li>
+          <li>Unorthodox ideas.</li>
+          <li>Coherence in the message and team <b>alignment </b>.</li>
+          <li> Responsive design </li>
+
         </ul>
       </div>
     </div>
@@ -114,4 +169,101 @@ permalink: "/about"
 </section>
 
 <hr/>
-{% include what.html %}
+
+<section class="section">
+  <div class="container">
+    <section class="section what">
+      <div class="container">
+        <header class="what-header text-center">
+          <h2>How can I help you?</h2>
+        </header>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="what-content">
+              <img class="what-picture" src="./assets/images/what/idea.png" alt="idea" />
+              <h4>Idea conceptualization</h4>
+              <p>
+                You have a project idea in your mind and you don’t know how to start? Let’s make it tangible! Sounds good? <i class="em em-grinning"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="what-content">
+              <img class="what-picture" src="./assets/images/what/growth.png" alt="Growth" />
+              <h4>Designing your next Digital Product</h4>
+              <p>
+                So you already know what you want to build but still, you need some help in defining the right features. Let's do it! Or maybe you already have that and just want a cool design for that awesome idea. I'm your girl!  <i class="em em-gem"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="what-content">
+              <img class="what-picture" src="./assets/images/what/design-thinking.png" alt="Design Thinking" />
+              <h4> Strategy to grow your business</h4>
+              <p>
+                Who is your customer? Which channels are you going to use to rich them? Which are the key activities you must accomplish to deliver value to your users? Do you have a clear business model? If one of your answers was "I don't know" Reach me.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="what-button text-center">
+          <a href="mailto:amaia.giralt@gmail.com" class="button">Write me</a>
+        </div>
+      </div>
+    </section>
+
+</div>
+</section>
+<!--Instagram Feed
+<section id="instafeed"></section>
+-->
+<section class="contact">
+  <div class="container">
+    <div class="contact-column">
+      <p>
+      If you want to collaborate on creating amazing products you are very welcome to contact me.
+      </p>
+    </div>
+    <div class="contact-column">
+      <ul class="social">
+        <li class="social-item">
+          <a target="_blank" href="https://twitter.com/amaigi">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social-item">
+          <a target="_blank" href="https://es.linkedin.com/in/amaiagiralt">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social-item">
+          <a target="_blank" href="https://www.instagram.com/amaigi/">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social-item">
+          <a target="_blank" href="mailto:amaia.giralt@gmail.com">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <p>&#xA9; <span class="js-year"></span> Amaia Giralt </p>
+  </div>
+</footer>
+
+<script>
+  document.querySelector('.js-year').textContent = new Date().getUTCFullYear();
+</script>
+
+<script type="text/javascript" src="./assets/js/instafeed.min.js"></script>
+<script type="text/javascript" src="./assets/js/instafeed.js"></script>
+
+
+
+</body>
+</html>

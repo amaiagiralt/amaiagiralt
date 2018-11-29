@@ -1,11 +1,54 @@
----
-title: Noanean Experience • Projects 
-layout: default
-permalink: /projects/noanean-experience
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<section class="main" style="background-image: linear-gradient(81deg, rgba(117, 255, 192, 0.9) 15%, rgba(125, 224, 230, 0.7) 100%), url('/assets/images/noanean-experiences/noanean-experience.png');">
-  {% include navbar.html %}
+  <title>Amaia Giralt website</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./../assets/css/normalize.css">
+  <link rel="stylesheet" href="./../assets/css/bootstrap.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./../assets/css/main.css">
+  <script src="./../assets/js/jquery.js"> </script>
+  <script src="./../assets/js/bootstrap.js"> </script>
+  <script src="./../assets/js/main.js"> </script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--Navegation-->
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="./../index.html"><img class="logo" src="./../assets/images/logo.png"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./../about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./../projects.html">Projects<span class="sr-only">(current)</span></a>
+            </li>
+            <!--li class="nav-item">
+              <a class="nav-link" href="./../blog.html">Blog</a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+<!---Navegation.END-->
+
+<section class="main" style="background-image: linear-gradient(81deg, rgba(125, 224, 230, 0.9) 15%, rgba(125, 224, 230, 0.7) 100%), url('./../assets/images/noanean-experiences/noanean-experience.png');">
+
   <div class="main-row">
     <div class="container">
       <div class="main-column">
@@ -18,6 +61,7 @@ permalink: /projects/noanean-experience
 </section>
 <section class="section">
   <div class="container">
+    <div class="row">
     <div class="col-md-8">
       <p>
         We believe that traveling is one of the best ways to learn, for that reason we created Noanean Experiences, to offer “learning by doing experiences” in the Basque Country. We offered a proactive learning experience with the most innovative sectors in Euskadi (Gastronomy, education and cooperativism. To make this happen we had local support and we used radically different methodologies so that our clients could co-create during the experience with companies, discover gastronomy innovations and see new education systems (Amara Berri System and Mondragon Team Academy).
@@ -27,7 +71,7 @@ permalink: /projects/noanean-experience
       </header>
       <ul>
         <li>
-          2012 y 2013: Programa “Education Revolution” de la empresa brasileña Aoka.
+          2012 y 2013: Programa “Education Revolution” from Aoka company based in Brasil
         </li>
         <li>
           2013 Universidad de Bristol (Inglaterra)
@@ -60,3 +104,56 @@ permalink: /projects/noanean-experience
     </div>
   </div>
 </section>
+<!--Collaboration-->
+</section>
+<section class="contact">
+<div class="container">
+  <div class="contact-column">
+    <p>
+      If you want to collaborate on creating amazing products you are very welcome to contact me.
+    </p>
+  </div>
+  <div class="contact-column">
+    <ul class="social">
+      <li class="social-item">
+        <a target="_blank" href="https://twitter.com/amaigi">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="social-item">
+        <a target="_blank" href="https://es.linkedin.com/in/amaiagiralt">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="social-item">
+        <a target="_blank" href="https://www.instagram.com/amaigi/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="social-item">
+        <a target="_blank" href="mailto:amaia.giralt@gmail.com">
+          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!--FOOTER-->
+<footer class="footer">
+<div class="container">
+  <p>&#xA9; <span class="js-year"></span> Amaia Giralt </p>
+</div>
+</footer>
+<script>
+document.querySelector('.js-year').textContent = new Date().getUTCFullYear();
+</script>
+
+<script type="text/javascript" src="./../assets/js/instafeed.min.js"></script>
+<script type="text/javascript" src="./../assets/js/instafeed.js"></script>
+
+
+
+</body>
+</html>
